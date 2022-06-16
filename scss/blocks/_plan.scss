@@ -1,0 +1,252 @@
+.plan {
+
+  &_label {
+    display: block;
+    max-width: 228px;
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-right: 23px;
+    }
+  }
+
+  &__inner-wrapper {
+    max-width: 1150px;
+  }
+
+  &__container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__left {
+    max-width: 255px;
+    width: 100%;
+    position: sticky;
+    top: 20px;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__item {
+    margin: 0;
+    padding: 0;
+    opacity: 0.4;
+    border-bottom: 1px solid #83888F;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    width: 100%;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 1;
+    }
+
+    &:last-child {
+      margin: 0;
+      padding: 0;
+      border: none;
+    }
+  }
+
+  &__item-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  &__item-num {
+    margin: 0;
+    font-family: 'Fraunces';
+    font-size: 24px;
+    line-height: 32px;
+    color: $dark-cyan;
+    margin-right: 28.5px;
+  }
+
+  &__item-heading {
+    margin: 0;
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: $dark-grey;
+  }
+
+  &__item--active {
+    opacity: 1;
+  }
+
+  &__right {
+    max-width: 730px;
+    width: 100%;
+  }
+
+  &__r-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__r-item {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 88px;
+
+    & > .plan__form {
+      display: none;
+    }
+  }
+
+  &__r-item--open {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 88px;
+
+    & > .plan__form {
+      display: flex;
+    }
+
+    & .plan__r-btn {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__r-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 56px;
+  }
+
+  &__r-heading {
+    font-family: 'Fraunces';
+    font-style: normal;
+    margin: 0;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #83888F;
+  }
+
+  &__r-btn {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  &__r-arrow {
+  }
+
+  &__form {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__input {
+    display: none;
+    &:checked + &-span {
+      background-color: $dark-cyan;
+      color: #FEFCF7;
+
+      .plan__span-heading {
+        color: #FFFFFF;
+      }
+    }
+  }
+
+  &__input-span {
+    padding: 32px 28px 84px 28px;
+    background: #F4F1EB;
+    border-radius: 8px;
+    color: $dark-grey;
+    display: inline-block;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #FDD6BA;
+    }
+  }
+
+  &__span-heading {
+    margin: 0;
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    display: block;
+    margin-bottom: 24px;
+    color: inherit;
+    width: 175px;
+  }
+
+  &__span-text {
+    margin: 0;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: inherit;
+  }
+
+  &__order {
+    background-color: #333D4B;
+    max-width: 730px;
+    width: 100%;
+    padding: 27px 64px;
+    margin-bottom: 40px;
+  }
+
+  &__order-text {
+    margin: 0;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    margin-bottom: 8px;
+  }
+
+  &__order-heading {
+    margin: 0;
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 40px;
+    color: #FFFFFF;
+    width: 602px;
+  }
+
+  &__order-span {
+    color: $dark-cyan;
+  }
+
+  &__btn {
+    margin-left: 520px;
+    margin-bottom: 168px;
+  }
+}

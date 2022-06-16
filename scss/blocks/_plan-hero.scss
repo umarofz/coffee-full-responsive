@@ -1,0 +1,55 @@
+.plan-hero {
+
+  margin-bottom: 177px;
+
+  &__container {
+    background-image: url("./../../images/bgi__plan.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding-top: 134px;
+    padding-bottom: 134px;
+    padding-left: 86px;
+    border-radius: 8px;
+  }
+
+  &__left {
+  }
+
+  &__heading {
+    margin: 0;
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    color: #FEFCF7;
+    margin-bottom: 32px;
+  }
+
+  &__text {
+    margin: 0;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FEFCF7;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    width: 445px;
+  }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+  &__container {
+    background-image: url("./../../images/bgi__plan@2x.png");
+  }
+}
