@@ -87,3 +87,71 @@ only screen and (                min-resolution: 2dppx) {
     }
   }
 }
+
+@media only screen and (max-width: 430px) {
+  .plan-hero {
+
+    margin-bottom: 144px;
+
+    &__container {
+      background-image: url("./../../images/bgi__plan__tablet.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      padding-top: 127px;
+      padding-bottom: 126px;
+      padding-left: 58px;
+      border-radius: 8px;
+      width: 665px;
+    }
+
+    &__left {
+    }
+
+    &__heading {
+      font-size: 48px;
+      line-height: 48px;
+      margin-bottom: 24px;
+    }
+
+    &__text {
+      font-size: 15px;
+      line-height: 25px;
+      width: 389px;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .plan-hero {
+
+    margin-bottom: 120px;
+
+    &__container {
+      background-image: url("./../../images/bgi__plan__mobile.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      padding: 101px 24px 136px 24px;
+      border-radius: 8px;
+      width: 327px;
+    }
+
+    &__left {
+    }
+
+    &__heading {
+      font-size: 40px;
+      line-height: 40px;
+      margin-bottom: 22px;
+      text-align: center;
+    }
+
+    &__text {
+      font-size: 15px;
+      line-height: 25px;
+      width: 279px;
+      text-align: center;
+    }
+  }
+}
