@@ -177,7 +177,7 @@ only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
 
-  &__container {
+  .hero__container {
     background-image: url("./../../images/coffee__made@2x.png");
   }
 }
