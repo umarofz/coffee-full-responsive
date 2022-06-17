@@ -249,6 +249,95 @@
     margin-left: 520px;
     margin-bottom: 168px;
   }
+
+  &__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+
+  &__inner-modal {
+    max-width: 540px;
+  }
+
+  &__modal-heading {
+    margin: 0;
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #FFFFFF;
+    background: #333D4B;
+    border-radius: 8px 8px 0px 0px;
+    padding: {
+      top: 48px;
+      bottom: 40px;
+      left: 45px;
+      right: 56px;
+    };
+  }
+
+  &__modal-info {
+    padding: 56px;
+    background-color: #fff;
+  }
+
+  &__modal-text {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 40px;
+    color: #83888F;
+    margin: 0;
+    margin-bottom: 7px;
+  }
+
+  &__modal-desc {
+    margin: 0;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333D4B;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    margin-bottom: 47px;
+  }
+
+  &__modal-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__modal-price {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    margin: 0;
+    color: #333D4B;
+  }
+
+  &__modal-btn {
+    min-width: 217px;
+    max-width: 250px;
+  }
+
+  &__modal--active {
+    display: flex;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -504,6 +593,99 @@
       min-width: 217px;
       max-width: 300px;
       margin-bottom: 144px;
+    }
+
+    &__modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+    }
+
+    &__inner-modal {
+      max-width: 540px;
+    }
+
+    &__modal-heading {
+      margin: 0;
+      font-family: 'Fraunces';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 40px;
+      line-height: 48px;
+      color: #FFFFFF;
+      background: #333D4B;
+      border-radius: 8px 8px 0px 0px;
+      padding: {
+        top: 48px;
+        bottom: 40px;
+        left: 45px;
+        right: 56px;
+      };
+    }
+
+    &__modal-info {
+      padding: 56px;
+      background-color: #fff;
+    }
+
+    &__modal-text {
+      font-family: 'Fraunces';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 40px;
+      color: #83888F;
+      margin: 0;
+      margin-bottom: 7px;
+    }
+
+    &__modal-desc {
+      margin: 0;
+      font-family: 'Barlow';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: #333D4B;
+      mix-blend-mode: normal;
+      opacity: 0.8;
+      margin-bottom: 47px;
+    }
+
+    &__modal-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__modal-price {
+      font-family: 'Fraunces';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 32px;
+      line-height: 36px;
+      margin: 0;
+      color: #333D4B;
+    }
+
+    &__modal-btn {
+      min-width: 217px;
+      max-width: 250px;
+    }
+
+    &__modal--active {
+      display: flex;
+    }
+
+    &__modal-inner-price {
+      display: none;
     }
   }
 }
@@ -765,6 +947,99 @@
       max-width: 300px;
       margin-bottom: 144px;
     }
+
+    &__modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+    }
+
+    &__inner-modal {
+      max-width: 540px;
+    }
+
+    &__modal-heading {
+      margin: 0;
+      font-family: 'Fraunces';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 40px;
+      line-height: 48px;
+      color: #FFFFFF;
+      background: #333D4B;
+      border-radius: 8px 8px 0px 0px;
+      padding: {
+        top: 48px;
+        bottom: 40px;
+        left: 45px;
+        right: 56px;
+      };
+    }
+
+    &__modal-info {
+      padding: 56px;
+      background-color: #fff;
+    }
+
+    &__modal-text {
+      font-family: 'Fraunces';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 40px;
+      color: #83888F;
+      margin: 0;
+      margin-bottom: 7px;
+    }
+
+    &__modal-desc {
+      margin: 0;
+      font-family: 'Barlow';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: #333D4B;
+      mix-blend-mode: normal;
+      opacity: 0.8;
+      margin-bottom: 47px;
+    }
+
+    &__modal-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__modal-price {
+      font-family: 'Fraunces';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 32px;
+      line-height: 36px;
+      margin: 0;
+      color: #333D4B;
+    }
+
+    &__modal-btn {
+      min-width: 217px;
+      max-width: 250px;
+    }
+
+    &__modal--active {
+      display: flex;
+    }
+
+    &__modal-inner-price {
+      display: none;
+    }
   }
 }
 
@@ -994,6 +1269,87 @@
       min-width: 217px;
       max-width: 300px;
       margin-bottom: 120px;
+    }
+
+    &__modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+      width: 400px;
+      padding-right: 24px;
+      padding-left: 24px;
+      border-bottom-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+
+    &__inner-modal {
+      max-width: 327px;
+      width: 100%;
+    }
+
+    &__modal-heading {
+      font-size: 28px;
+      line-height: 32px;
+      padding: {
+        top: 28px;
+        bottom: 28px;
+        left: 24px;
+        right: 68px;
+      };
+    }
+
+    &__modal-info {
+      padding: 40px 24px 24px 24px;
+      background-color: #fff;
+    }
+
+    &__modal-text {
+      font-size: 24px;
+      line-height: 40px;
+      margin-bottom: 3px;
+    }
+
+    &__modal-desc {
+      font-size: 15px;
+line-height: 25px;
+    }
+
+    &__modal-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__modal-price {
+      font-family: 'Fraunces';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 32px;
+      line-height: 36px;
+      margin: 0;
+      color: #333D4B;
+      display: none;
+    }
+
+    &__modal-btn {
+      min-width: 279px;
+      max-width: 300px;
+      margin-left: -1px;
+    }
+
+    &__modal--active {
+      display: flex;
+    }
+
+    &__modal-inner-price {
+      display: inline-block;
     }
   }
 }

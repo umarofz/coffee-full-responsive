@@ -330,7 +330,25 @@
               <h2 class="plan__order-heading">“I drink my coffee as <span class="plan__order-span">Filter</span>, with a <span class="plan__order-span">Decaf</span> type of bean. <span class="plan__order-span">250g</span> ground ala <span class="plan__order-span">Cafetiére</span>, sent to me <span class="plan__order-span">Every Week</span>.”</h2>
             </div>
 
-            <button class="hero__btn plan__btn">Create my plan!</button>
+            <button class="hero__btn plan__btn" type="button">Create my plan!</button>
+
+            <div class="plan__modal">
+              <div class="plan__inner-modal">
+                <h3 class="plan__modal-heading">Order Summary</h3>
+
+                <div class="plan__modal-info">
+                  <p class="plan__modal-text">“I drink my coffee as Filter, with a Decaf type of bean. 250g ground ala Cafetiére, sent to me Every Week.”</p>
+
+                  <p class="plan__modal-desc">Is this correct? You can proceed to checkout or go back to plan selection if something is off. Subscription discount codes can also be redeemed at the checkout. </p>
+
+                  <div class="plan__modal-bottom">
+                    <p class="plan__modal-price">$14.00 / mo</p>
+
+                    <button type="submit" class="hero__btn plan__modal-btn">Checkout <span class="plan__modal-inner-price"> - $14.00 / mo</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </form>
 
         </div>

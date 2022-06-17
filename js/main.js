@@ -9,3 +9,16 @@ elForm.addEventListener("click", function(evt) {
     parentClass.classList.toggle("plan__r-item--open")
   }
 })
+
+
+var elBtn = document.querySelector(".plan__btn")
+var elModal = document.querySelector(".plan__modal")
+var elModalHeader = document.querySelector(".plan__modal-heading")
+
+elBtn.addEventListener("click", function () {
+  elModal.classList.add("plan__modal--active")
+})
+
+elModalHeader.addEventListener("click", function () {
+  elModal.classList.remove("plan__modal--active")
+})

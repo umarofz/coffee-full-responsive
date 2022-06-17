@@ -367,6 +367,7 @@ html {
 }
 
 body {
+  position: relative;
   font-family: "Arial", sans-serif;
   margin: 0;
   padding: 20px auto;
@@ -408,6 +409,7 @@ img {
   border: none;
   overflow: none;
   padding: 16px 31px;
+  cursor: pointer;
 }
 
 .hero__btn:hover {
@@ -420,6 +422,7 @@ img {
   line-height: 25px;
   text-align: center;
   color: #FEFCF7;
+  cursor: pointer;
 }
 
 .header {
@@ -3055,6 +3058,83 @@ img {
   margin-left: 520px;
   margin-bottom: 168px;
 }
+.plan__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+.plan__inner-modal {
+  max-width: 540px;
+}
+.plan__modal-heading {
+  margin: 0;
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #FFFFFF;
+  background: #333D4B;
+  border-radius: 8px 8px 0px 0px;
+  padding-top: 48px;
+  padding-bottom: 40px;
+  padding-left: 45px;
+  padding-right: 56px;
+}
+.plan__modal-info {
+  padding: 56px;
+  background-color: #fff;
+}
+.plan__modal-text {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 40px;
+  color: #83888F;
+  margin: 0;
+  margin-bottom: 7px;
+}
+.plan__modal-desc {
+  margin: 0;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #333D4B;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  margin-bottom: 47px;
+}
+.plan__modal-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.plan__modal-price {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  margin: 0;
+  color: #333D4B;
+}
+.plan__modal-btn {
+  min-width: 217px;
+  max-width: 250px;
+}
+.plan__modal--active {
+  display: flex;
+}
 
 @media only screen and (max-width: 800px) {
   .plan_label {
@@ -3269,6 +3349,86 @@ img {
     min-width: 217px;
     max-width: 300px;
     margin-bottom: 144px;
+  }
+  .plan__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  .plan__inner-modal {
+    max-width: 540px;
+  }
+  .plan__modal-heading {
+    margin: 0;
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #FFFFFF;
+    background: #333D4B;
+    border-radius: 8px 8px 0px 0px;
+    padding-top: 48px;
+    padding-bottom: 40px;
+    padding-left: 45px;
+    padding-right: 56px;
+  }
+  .plan__modal-info {
+    padding: 56px;
+    background-color: #fff;
+  }
+  .plan__modal-text {
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 40px;
+    color: #83888F;
+    margin: 0;
+    margin-bottom: 7px;
+  }
+  .plan__modal-desc {
+    margin: 0;
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333D4B;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    margin-bottom: 47px;
+  }
+  .plan__modal-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .plan__modal-price {
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    margin: 0;
+    color: #333D4B;
+  }
+  .plan__modal-btn {
+    min-width: 217px;
+    max-width: 250px;
+  }
+  .plan__modal--active {
+    display: flex;
+  }
+  .plan__modal-inner-price {
+    display: none;
   }
 }
 @media only screen and (max-width: 430px) {
@@ -3488,6 +3648,86 @@ img {
     max-width: 300px;
     margin-bottom: 144px;
   }
+  .plan__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  .plan__inner-modal {
+    max-width: 540px;
+  }
+  .plan__modal-heading {
+    margin: 0;
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #FFFFFF;
+    background: #333D4B;
+    border-radius: 8px 8px 0px 0px;
+    padding-top: 48px;
+    padding-bottom: 40px;
+    padding-left: 45px;
+    padding-right: 56px;
+  }
+  .plan__modal-info {
+    padding: 56px;
+    background-color: #fff;
+  }
+  .plan__modal-text {
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 40px;
+    color: #83888F;
+    margin: 0;
+    margin-bottom: 7px;
+  }
+  .plan__modal-desc {
+    margin: 0;
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333D4B;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    margin-bottom: 47px;
+  }
+  .plan__modal-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .plan__modal-price {
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    margin: 0;
+    color: #333D4B;
+  }
+  .plan__modal-btn {
+    min-width: 217px;
+    max-width: 250px;
+  }
+  .plan__modal--active {
+    display: flex;
+  }
+  .plan__modal-inner-price {
+    display: none;
+  }
 }
 @media only screen and (max-width: 400px) {
   .plan_label {
@@ -3673,6 +3913,74 @@ img {
     min-width: 217px;
     max-width: 300px;
     margin-bottom: 120px;
+  }
+  .plan__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    width: 400px;
+    padding-right: 24px;
+    padding-left: 24px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  .plan__inner-modal {
+    max-width: 327px;
+    width: 100%;
+  }
+  .plan__modal-heading {
+    font-size: 28px;
+    line-height: 32px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    padding-left: 24px;
+    padding-right: 68px;
+  }
+  .plan__modal-info {
+    padding: 40px 24px 24px 24px;
+    background-color: #fff;
+  }
+  .plan__modal-text {
+    font-size: 24px;
+    line-height: 40px;
+    margin-bottom: 3px;
+  }
+  .plan__modal-desc {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .plan__modal-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .plan__modal-price {
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    margin: 0;
+    color: #333D4B;
+    display: none;
+  }
+  .plan__modal-btn {
+    min-width: 279px;
+    max-width: 300px;
+    margin-left: -1px;
+  }
+  .plan__modal--active {
+    display: flex;
+  }
+  .plan__modal-inner-price {
+    display: inline-block;
   }
 }
 .footer {
