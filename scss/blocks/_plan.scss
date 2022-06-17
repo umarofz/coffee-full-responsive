@@ -338,6 +338,10 @@
   &__modal--active {
     display: flex;
   }
+
+  &__modal-inner-price {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -1318,7 +1322,7 @@
 
     &__modal-desc {
       font-size: 15px;
-line-height: 25px;
+      line-height: 25px;
     }
 
     &__modal-bottom {
